@@ -13,6 +13,9 @@ export class Post {
 
   @Prop({ default: Date.now })
   createdAt: Date;
+
+  @Prop()
+  authorId: string;
 }
 
 export const PostSchema = SchemaFactory.createForClass(Post);
